@@ -10,16 +10,16 @@ def key_for_min_value(name_hash)
    while swapped do
      swapped = false
      (values_array.length - 1).times do |i|
-       if values_array[i] < values_array[i + 1]
+       if values_array[i] > values_array[i + 1]
          values_array[i], values_array[i + 1] = values_array[i + 1], values_array[i]
      swapped = true
        end
      end
    end
    values_array
-   max = values_array.first
+   min = values_array.first
    name_hash.collect do |name, value|
-    if value == max
+    if value == min
       return name
       end
       end

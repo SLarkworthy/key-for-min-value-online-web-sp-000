@@ -12,7 +12,7 @@ def key_for_min_value(name_hash)
      (values_array.length - 1).times do |i|
        if values_array[i] > values_array[i + 1]
          values_array[i], values_array[i + 1] = values_array[i + 1], values_array[i]
-     swapped = true
+          swapped = true
        end
      end
    end
